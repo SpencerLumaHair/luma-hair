@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/luma-hair/static/css/main.f855e6bc.css",
+    "main.js": "/luma-hair/static/js/main.6f7292d8.js",
+    "static/js/453.3da9f3e1.chunk.js": "/luma-hair/static/js/453.3da9f3e1.chunk.js",
+    "index.html": "/luma-hair/index.html",
+    "main.f855e6bc.css.map": "/luma-hair/static/css/main.f855e6bc.css.map",
+    "main.6f7292d8.js.map": "/luma-hair/static/js/main.6f7292d8.js.map",
+    "453.3da9f3e1.chunk.js.map": "/luma-hair/static/js/453.3da9f3e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6f7292d8.js"
+  ]
+}
