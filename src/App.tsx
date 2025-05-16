@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Future website for Luma Hair Studio!
+          Luma Hair Studio - Coming to you soon!
         </p>
       </header>
     </div>
