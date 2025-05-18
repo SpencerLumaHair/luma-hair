@@ -1,30 +1,48 @@
 import React from 'react';
 import './App.css';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import NavBar from './components/NavBar';
+import logo from './assets/Logo.png';
 
 function App() {
   return (
-    <Box sx={{ backgroundColor: 'background.default' }} >
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'background.default' }} >
       <NavBar />
-      <Container>
-        <Box sx={{ my: 2 }}>
-          <Typography variant="h2" color="primary">
-            Welcome to Luma Hair Studio
-          </Typography>
-
-          <Typography>
-            {[...new Array(40)]
-              .map(
-                () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-              )
-              .join('\n')}
-          </Typography>
+      <Box sx={{ my: 2 }}>
+        <Box sx={{ textAlign: 'center' }}>
+          <Box
+            component="img"
+            src={logo}
+            alt="Luma Hair Studio Logo"
+            sx={{
+              width: '100%', // Default width
+              maxWidth: '450px', // Limit maximum width
+              '@media (max-width: 768px)': {
+                width: '400px', // Adjust width for smaller screens
+              },
+              '@media (max-width: 500px)': {
+                width: '300px', // Further adjust width for very small screens
+              },
+            }}
+          />
         </Box>
-      </Container>
+        <Box sx={{ textAlign: 'center', mt: 2 }}>
+          <Typography variant='body1'>
+            This website is currently under construction. In the meantime, you can book an appointment by scheduling on the link below:
+          </Typography>
+          <Button variant='contained'
+            href='http://www.vagaro.com/lumahairstudio'
+            target='_blank'
+            sx={{
+              backgroundColor: 'rgb(100, 137, 146)',
+              mt: 2
+            }}
+            size='large'
+          >
+            Book Appointment
+          </Button>
+        </Box>
+      </Box>
     </Box>
   );
 }

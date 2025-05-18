@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { red, teal, green, grey } from "@mui/material/colors";
+import { red, green, grey } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
@@ -28,8 +28,8 @@ const theme = createTheme({
       contrastText: "#fff",
     },
     background: {
-      default: teal[50],
-      paper: teal[300],
+      default: "rgb(250, 249, 244)",
+      paper: "rgb(175, 196, 188)",
     },
   },
 });
