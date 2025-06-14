@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
 import logo from '../assets/Logo.png'
 import AppColors from '../assets/colors';
 
@@ -26,20 +26,22 @@ function MainPage() {
           />
         </Box>
         <Box sx={{ textAlign: 'center', mt: 2 }}>
-          <Typography variant='body1' sx={{ color: 'primary.main' }} gutterBottom>
-            This website is currently under construction. In the meantime, you can book an appointment with Luma Hair Studio by clicking the button below.
-          </Typography>
-          <Button variant='contained'
-            href='http://www.vagaro.com/lumahairstudio'
-            target='_blank'
-            sx={{
-              backgroundColor: AppColors.buttonPrimary,
-              mt: 2
-            }}
-            size='large'
-          >
-            Book Appointment
-          </Button>
+          <Container maxWidth='md'>
+            <Typography variant='body1' sx={{ color: 'primary.main' }} gutterBottom>
+              This website is currently under construction. In the meantime, you can book an appointment with Luma Hair Studio by clicking the button below.
+            </Typography>
+            <Button variant='contained'
+              href='http://www.vagaro.com/lumahairstudio'
+              target='_blank'
+              sx={{
+                backgroundColor: AppColors.buttonPrimary,
+                mt: 2
+              }}
+              size='large'
+            >
+              Book Now
+            </Button>
+          </Container>
         </Box>
       </Box>
     </Box>
